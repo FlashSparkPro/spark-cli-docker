@@ -2,6 +2,32 @@
 
 Docker container for running the Spark CLI tool.
 
+## Getting Started
+
+First, clone this repository:
+
+```bash
+git clone https://github.com/FlashSparkPro/spark-cli-docker.git
+cd spark-cli-docker
+```
+
+## Security Notice
+
+⚠️ **Important Security Consideration**: 
+- Always verify the source code you're using
+- This project uses the FlashSparkPro fork of the Spark repository by default
+- You should review and verify the code before using it in production
+- Don't trust, verify!
+
+## Customization
+
+If you prefer to use the official Spark repository instead of the FlashSparkPro fork, you can modify the Dockerfile:
+
+```dockerfile
+# Change this line in Dockerfile
+RUN git clone https://github.com/buildonspark/spark.git
+```
+
 ## Prerequisites
 
 ### Installing Docker
@@ -50,3 +76,5 @@ docker run -it spark-cli yarn cli:mainnet
 - The container uses Node.js 18 with Yarn 4.5.0
 - The Spark CLI tool is automatically built during the Docker image creation
 - All necessary dependencies are included in the container
+- This project uses the FlashSparkPro fork of the Spark repository by default
+- Always verify the source code and repository you're using

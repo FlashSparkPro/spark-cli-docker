@@ -10,7 +10,7 @@ RUN apt-get update && \
 RUN corepack enable && \
     corepack prepare yarn@4.5.0 --activate
 
-RUN git clone https://github.com/buildonspark/spark.git
+RUN git clone https://github.com/FlashSparkPro/spark.git
 
 WORKDIR /app/spark/sdks/js
 RUN yarn && yarn build
