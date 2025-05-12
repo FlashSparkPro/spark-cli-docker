@@ -12,7 +12,7 @@ RUN corepack enable && \
 
 RUN git clone https://github.com/FlashSparkPro/spark.git
 
-WORKDIR /app/spark/sdks/js
+WORKDIR /app/spark/sdks/js/
 RUN yarn && yarn build
 
 WORKDIR /app/spark/sdks/js/examples/spark-cli
