@@ -49,6 +49,9 @@ Build the Docker image using the following command:
 
 ```bash
 docker build -t spark-cli .
+
+# or
+docker build --no-cache -t spark-cli .
 ```
 
 ### Running the Container
